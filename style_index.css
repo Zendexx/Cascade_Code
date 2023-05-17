@@ -6,7 +6,7 @@
     --light-color: #fff;
     --light-color-alt: #afb6cd;
     --primary-background-color: #131417;
-    --secondary-background-color: #252830;
+    --secondary-background-color: #1BF48B;
     --hover-light-color: var(--light-color);
     --hover-dark-color: var(--primary-background-color);
     --gradient-color: linear-gradient(
@@ -75,7 +75,7 @@ body.light-theme{
     --light-color: #3d3d3d;
     --light-color-alt: rgba(0,0,0,.6);
     --primary-background-color: #fff;
-    --secondary-background-color: #f1f1f1;
+    --secondary-background-color: #1BF48B;
     --hover-light-color: #fff;
     --transparent-dark-color: var(--secondary-background-color);
     --transparent-light-color: rgba(0,0,0,.1);
@@ -119,7 +119,12 @@ body.light-theme{
     font-size: var(--font-size-md);
     color: var(--light-color);
 }
-
+.content h1{
+    color: #1BF48B;
+    padding-bottom: 60px;
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
+}
 .menu{
     position: absolute;
     top: 8.5rem;
@@ -452,3 +457,17 @@ body.light-theme{
   }
 
 }
+/* On Phone Code To make it better on smaller screen */
+/* Styles for desktop/laptop */
+.container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  /* Styles for smartphones */
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
